@@ -1,0 +1,78 @@
+.categories-container {
+  padding: 60px 50px;
+  min-height: 100vh;
+  background: #fff;
+  text-align: center;
+}
+
+.categories-container h2 {
+  font-size: 3rem;
+  margin-bottom: 60px;
+  background: linear-gradient(90deg, #3498db, #9b59b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.courses-carousel-3d {
+  display: flex;
+  perspective: 1200px;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+}
+
+.card-wrapper-3d {
+  width: 300px;
+  height: 380px;
+  margin: 0 20px;
+  transition: transform 0.8s ease, opacity 0.8s ease, box-shadow 0.8s ease;
+  transform-style: preserve-3d;
+}
+
+.card-wrapper-3d .course-card {
+  border-radius: 20px;
+  background: linear-gradient(135deg, #3498db, #9b59b6);
+  color: #fff;
+  padding: 25px;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-wrapper-3d .course-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 25px 40px rgba(0,0,0,0.25);
+}
+
+/* posições 3D com glow lateral */
+.position-0 { 
+  transform: scale(1.1) translateZ(50px); 
+  opacity: 1; 
+  z-index: 3; 
+  box-shadow: 0 15px 30px rgba(52,152,219,0.4);
+}
+.position-1 { 
+  transform: scale(0.85) translateX(250px) rotateY(-20deg); 
+  opacity: 0.5; 
+  z-index: 2; 
+  box-shadow: 0 15px 30px rgba(155,89,182,0.2);
+}
+.position-2 { 
+  transform: scale(0.85) translateX(-250px) rotateY(20deg); 
+  opacity: 0.5; 
+  z-index: 2; 
+  box-shadow: 0 15px 30px rgba(155,89,182,0.2);
+}
+
+

@@ -1,0 +1,88 @@
+.favoritos-container {
+  padding: 50px;
+  text-align: center;
+  min-height: 100vh;
+  background: #fff;
+}
+
+.favoritos-container h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #3498db, #9b59b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.favoritos-container p {
+  font-size: 1.3rem;
+  max-width: 1000px;
+  margin: 0 auto 50px auto;
+  line-height: 1.6;
+  color: #333;
+}
+
+.favoritos-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.favorito-card-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+  z-index: 0; /* garante que o card original não bloqueie */
+}
+
+.favorito-card-wrapper:hover {
+  transform: scale(1.05);
+}
+
+/* Overlay com detalhes e botão ao passar o mouse */
+.favorito-card-overlay {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(52, 152, 219, 0.95);
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 15px;
+  margin-top: 15px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  animation: fadeIn 0.3s ease;
+  z-index: 10; /* overlay acima do card */
+  pointer-events: auto; /* permite clicar no overlay e no botão */
+}
+
+.favorito-card-overlay p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+
+.remove-btn {
+  background: #ffcc00;
+  color: #1b1b3a;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 25px;
+  margin-top: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.remove-btn:hover {
+  background: #e6b800;
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateX(-50%) translateY(10px); }
+  to { opacity: 1; transform: translateX(-50%) translateY(0); }
+}

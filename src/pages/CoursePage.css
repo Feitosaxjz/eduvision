@@ -1,0 +1,22 @@
+.course-page-container {
+  padding: 50px;
+  animation: fadeSlide 0.8s ease-in;
+}
+
+.course-title {
+  background: linear-gradient(to right, #4361ee, #3a0ca3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.course-desc {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+@keyframes fadeSlide {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
