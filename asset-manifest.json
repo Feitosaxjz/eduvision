@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/eduvision/static/css/main.aa53d305.css",
-    "main.js": "/eduvision/static/js/main.d06a7f3b.js",
+    "main.js": "/eduvision/static/js/main.a4cc3b75.js",
     "index.html": "/eduvision/index.html",
     "main.aa53d305.css.map": "/eduvision/static/css/main.aa53d305.css.map",
-    "main.d06a7f3b.js.map": "/eduvision/static/js/main.d06a7f3b.js.map"
+    "main.a4cc3b75.js.map": "/eduvision/static/js/main.a4cc3b75.js.map"
   },
   "entrypoints": [
     "static/css/main.aa53d305.css",
-    "static/js/main.d06a7f3b.js"
+    "static/js/main.a4cc3b75.js"
   ]
 }
