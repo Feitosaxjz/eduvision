@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/eduvision/static/css/main.aa53d305.css",
+    "main.js": "/eduvision/static/js/main.d06a7f3b.js",
+    "index.html": "/eduvision/index.html",
+    "main.aa53d305.css.map": "/eduvision/static/css/main.aa53d305.css.map",
+    "main.d06a7f3b.js.map": "/eduvision/static/js/main.d06a7f3b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aa53d305.css",
+    "static/js/main.d06a7f3b.js"
+  ]
+}
